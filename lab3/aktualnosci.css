@@ -1,0 +1,27 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+body article{
+    display: block;
+}
+article{
+    background-color:inherit;
+    padding-bottom: 1em;
+}
+article h2 {
+    background-color:#d3d3d3;
+    margin: 0 0 0 0;
+}
+article:after{
+    clear:both;
+    display:block;
+    content:'';
+}
+article img {
+    float: left;
+    margin: 1em 1em 0 0;
+}
+h2 time {
+    color:#a9aaac;
+    float:  right;
+}

@@ -1,0 +1,155 @@
+body{
+    padding: 0 0 0 25%;
+    font-family: Georgia, "Times New Roman",Times, serif;
+    color: black;
+    background-color: orange;
+}
+
+footer {
+    border-top: thin solid red;
+    background-color:darkslategray;
+    margin-right: 10%;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+footer p {
+    padding: 1em 3em 0em 3em;
+}
+
+footer .certificates {
+    padding: 2em 3em 2em 3em;
+}
+
+#articles article {
+    margin-left: 3em;
+    margin-top: 2em;
+    padding-top: 3em;
+}
+#articles article:last-child {
+    padding-bottom:3em;
+}
+header{
+    margin: 2em 0 0 0;
+}
+header figure,
+header h1 {
+    padding: 2em 2em 1em 2em;
+}
+
+header h1 span:last-child{
+    display:block;
+    color: red;
+}
+#navigation_0 {
+    padding: 2em 2em 3em 2em;
+}
+#articles {
+    background-color: gray;
+    border-radius: 10px;
+    margin-right: 10%;
+}
+
+#navigation_0 {
+    background-color: rgb(238, 130, 130);
+    border-radius: 10px; 
+}
+
+body header {
+    background-color: rgb(105, 105, 117);
+    border-radius: 10px;
+    margin-right: 10%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(230, 189, 9);
+}
+
+#navigation_0 {
+    position: fixed;
+    top: 2em;
+    left: 1em;
+    width: 15%;
+}
+
+#navigation_0 li,
+#navigation_0 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation_0 ul li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border: 2px solid black;
+}
+
+#navigation_0 ol{
+    padding: 0 10% 0 10%;
+}
+
+#navigation_0 a{
+    text-decoration: none;
+}
+
+#navigation_0 a:link{
+    color: blue;
+}
+
+#navigation_0 a:visited{
+    color: purple;
+}
+
+#navigation_0 a:hover{
+    background: rgb(214, 92, 92);
+}
+
+#chapter_3 section {
+    padding-left: 5em;
+}
+
+#navigation_0 ul li:nth-child(1) li {
+    background-color: rgb(22, 230, 15);
+}
+
+#navigation_0 ul li:nth-child(2) li {
+    background-color: rgb(230, 180, 15);
+}
+
+#navigation_0 ul li:last-child li {
+    background-color: rgb(226, 230, 15);
+}
+
+#chapter_2_5 .author{
+    font-variant: small-caps;
+}
+
+#chapter_2_5 .title {
+    font-style: italic;
+}
+
+.certificates p {
+    display:inline;
+}
+
+@media print {
+    #navigation_0 {
+        display: none;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+.navbar ol.education  {
+    display:none;
+}
+
+.navbar  li:hover ol.education {
+    display:block;
+    
+}

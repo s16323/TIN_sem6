@@ -1,0 +1,160 @@
+/* Colors */
+@header-color: #ffc7c7;
+@left-color: #ffe6e6;
+@main-color: #fff0f0;
+@right-color:#ffd6d6;
+@footer-color: #ffbdbd;
+
+/* Sizes fonts */
+@leftAndRightColumn: 16px;
+@menuHeight: 28px;
+@bodyFontType: Georgia, 'Times New Roman', Times, serif;
+
+/* Background files */
+@btn-backgrnd: url(images/bg_nav.png);
+@btn-bckgrndHover: url(images/bg_nav_h.png);
+@list-bullet: url(images/bullet.png);
+
+/* Media queries */
+@wide:  ~"only screen and (min-width: 800px)";
+@medium:  ~"only screen and (min-width: 600px) and (max-width: 799px)";
+@narrow:  ~"only screen and (max-width: 599px)";
+
+body{
+    font-family: @bodyFontType;
+    border: solid 1px black;
+
+    #container {
+        display:grid;
+        align-content:stretch;
+        grid-template-rows:auto;
+        grid-column-gap:0;
+        grid-row-gap:0;
+
+        @media @wide {
+            grid-template-columns:22% auto 22%;
+            grid-template-areas: "header header header" 
+                                 "navbar navbar navbar"
+                                 "left main right" 
+                                 "footer footer footer";
+        }
+        @media @medium {
+            grid-template-columns:50% 50%;
+            grid-template-areas: "header header " 
+                                 "navbar navbar "
+                                 "main main "
+                                 "left right " 
+                                 "footer footer ";
+        }
+        @media @narrow {
+            grid-template-columns: 100%;
+            grid-template-areas: "header" 
+                                 "navbar"
+                                 "main "
+                                 "right "
+                                 "footer ";
+        }
+        header {
+            grid-area: header;
+            background-color: @header-color;
+            text-align: center;
+            padding: 1em 9px 1em 9px;
+            img {    
+                width: auto;
+                max-width: 100%;
+                object-fit: contain;
+            }
+        }
+        
+        nav{
+            grid-area: navbar;
+            width: 100%;
+            ul{
+                margin: 0;
+                padding-inline-start: 0;
+                background-image: @btn-backgrnd;   
+                li {  
+                    display: inline-block;
+                    height: @menuHeight;
+                    line-height: @menuHeight;
+                    margin-right: -4px; /* kasuje niepotrzeben przerwy miedzy elementami LI<>*/
+                    border-right: solid 1px black;   
+                    max-width: 100%;
+                    cursor: pointer;
+                    @media @narrow {
+                        background-image: @btn-backgrnd;
+                        display: block;
+                        text-align: center;
+                    }
+                    a {
+                        color: white;
+                        text-decoration: none;   
+                        padding: 0 1em 0 1em;
+                        vertical-align: middle;
+                    }
+                    &:hover {
+                        background-image: @btn-bckgrndHover;
+                    }
+
+                }
+            }
+        } 
+
+        #left {
+            padding: 0 9px 0 9px;
+            grid-area: left;
+            background-color: @left-color;
+            font-size: @leftAndRightColumn;
+            @media @narrow {
+                display:none;
+            }
+            h3 {
+                a{
+                    color: black;
+                }
+            }
+        }
+
+        #main {
+            padding: 0 9px 0 9px;
+            grid-area: main;
+            background-color: @main-color;
+        }
+
+        #important {
+            padding: 0 9px 0 9px;
+            grid-area: right;
+            background-color: @right-color;
+            font-size: @leftAndRightColumn;
+            h2 {
+                font-weight: normal;
+            }
+            ul{
+                list-style-type: none;
+                padding-bottom: 1em;
+                li{
+                    background: @list-bullet no-repeat left top;
+                    padding: 0px 0px 0px 25px;
+                    &:first-child{
+                        margin-top: 2em;
+                    }
+                    margin-top: 1em;
+                    a {
+                        color: black;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: @footer-color;
+            text-align: center;
+            padding: 1em 0 1em 0;
+        }
+        
+    } 
+}
+
+
