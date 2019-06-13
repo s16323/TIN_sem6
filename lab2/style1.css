@@ -1,0 +1,148 @@
+body {
+    background-color: gray;
+    font-family: Lato, sans-serif; /*rodzina czcionki = krój, sans-serif = czcionka bez-szeryfowa*/
+
+}
+
+/*Mozżna napisać: div#container - wtedy styl będzie tylko dla <div>, bez tego każdy element posiadający id="container" będzie korzystał z tego stylu. */
+/*#container oznacza ellement unikatowy na stronie, .container oznacza użycie klasy CSS, wtedy w HTML trzeba użyć: <div class="container"> */
+#container {
+    width: 1000px;
+    margin-left: auto; /* auto - przeglądarka sama ustawi diva na środku ekranu*/
+    margin-right: auto;
+}
+
+#logo {
+    color: white;
+    margin-top: 20px; /*20px odstępu od górnej belki przeglądarki*/
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+
+}
+
+#menu {
+    background-color: #505050; /*R=50 G=50 B=50   HEX*/
+    margin-top: 20px; /*żeby logo i menu nie były przyklejone*/
+    margin-bottom: 20px;
+    color: white;
+    padding: 10px; /*wypełnienie diva w środku - odstęp od krawędzi zewnętrznej do krawędzi zawartości*/
+
+}
+
+#topbar {
+    background-color: #68878E;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+
+}
+
+#topbarL {
+    float: left;
+    /*padding: 20px;    */
+    width: 150px;
+    text-align: center;
+    /*border-right: 2px dotted #CCCCCC;       /*wykropkowana linia (warto odjąć te 2px od width: 140px; gdyby tą linię robić)*/
+
+}
+
+#topbarR {
+    float: left;
+    /*padding: 20px;    */
+    width: 730px; /*cały container ma 1000px --> trzeba policzyć paddingi i width żeby się zmieścić*/
+    margin-left: 60px;
+    font-size: 16px;
+    text-align: justify; /*wyjustowanie*/
+
+}
+
+#sidebar {
+    float: left;
+    width: 150px;
+    min-height: auto;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 18px;
+    position: sticky;                   /*Nprzyklejanie do góry lewego menu przy scrollowaniu*/
+    top: 0;
+
+}
+
+
+#content {
+    float: left;
+    /*padding: 40px;        */
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 730px;
+    /*background-color: ;       */
+    min-height: auto;
+    color: white;
+    text-align: justify;
+}
+
+#footer {
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+
+}
+
+
+/*klasy*/
+.option {
+    float: left;
+    min-width: 50px;
+    height: 25px;
+    font-size: 18px;
+    padding: 10px;
+    /*border-right: 2px dotted #666666;       /*wkropkowane linie między przciskami*/
+    /*opacity: 0.8;                             /*przezroczystość diva z menu*/
+}
+
+.option:hover {
+    background-color: #444444; /*po najechaniu kursorem tło przycisku zmieni kolor*/
+    cursor: pointer; /*zmiana kursora na 'łapkę'*/
+
+}
+
+.optionL {
+    font-size: 18px;
+    height: 25px;
+    padding: 10px;
+    /*border-bottom: 2px dotted #444444;        */
+}
+
+.optionL:hover {
+    background-color: #444444;
+    color: white; /*zmiana koloru czcionki na biały po najechaniu kursorem*/
+    cursor: pointer;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link2 {
+    color: inherit;
+}
+
+.link2:hover {
+    background-color: #444444;
+}
+
+/* span - od diva różni się tym, że nie zmienia struktury strony */
+.bigtitle {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}

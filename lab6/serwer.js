@@ -75,9 +75,9 @@ process.on('SIGINT',function(){
         } else {
             console.log(`${file} File exists, and it is writable, proceed with writing data`);
             if (baza().count("title") > baseRecordCountAtBeggining ){
-                console.log("Aktualizujemy bazę danych.");
-                console.log("Baza miała na początku tyle rekordów: " + baseRecordCountAtBeggining);
-                console.log("Zaktualizowana baza ma obecnie rekordów: " + baza().count('*') );
+                console.log("Aktualizacja bazy danych...");
+                console.log("Liczba rekordów przed aktualizacją: " + baseRecordCountAtBeggining);
+                console.log("Liczba rekordów po aktualizacji: " + baza().count('*') );
                 
                 var begin = "/* jshint node: true */ \n var TAFFY = require('taffy'); \n var books = TAFFY( \n"; 
                 var bazaJSON = baza().stringify();

@@ -28,5 +28,6 @@
 {"title":"Dobić dziada","author":"Andrzej Pilipiuk","genre":"komiks"},
 {"title":"Zabójca","author":"Andrzej Pilipiuk","genre":"komiks"},
 {"title":"Krasnoludy","author":"Andrzej Pilipiuk","genre":"komiks"},
-{"title":"Samochody moje","author":"Jeremy Clarkson","genre":"bajki"}]); 
+{"title":"Samochody moje","author":"Jeremy Clarkson","genre":"bajki"},
+{"title":"tytultest1","author":"autortest1","genre":"prawo"}]); 
  module.exports = books;
