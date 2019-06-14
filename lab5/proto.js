@@ -44,6 +44,6 @@ String.prototype.erLik = function(text) {
 };
 
 
-var test = new String("bokmål");
-console.log(test.erLik("bokmaal"));
-console.log(test.erLik("bokmal"));
+// var test = new String("bokmål");
+// console.log(test.erLik("bokmaal"));
+// console.log(test.erLik("bokmal"));

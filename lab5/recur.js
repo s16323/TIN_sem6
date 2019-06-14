@@ -14,12 +14,12 @@ function cached(cache, fun) {
     return f;
 }
 
-var fibonacci = cached([0,1], function(rec, n){
-    return rec(n-1) + rec(n-2);
-});
-
-var factorial = cached([1], function (rec, n) {
-    return rec(n-1) *n;
-});
-console.log(fibonacci(5));
-console.log(factorial(5));
+// var fibonacci = cached([0,1], function(rec, n){
+//     return rec(n-1) + rec(n-2);
+// });
+//
+// var factorial = cached([1], function (rec, n) {
+//     return rec(n-1) *n;
+// });
+// console.log(fibonacci(5));
+// console.log(factorial(5));

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Księgarnia Żurek</title>
+  <link rel="stylesheet" href="css/styl.css" />
+  <script src="jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css"/>
+</head>
+<body>
+<header>
+  <h1>Księgarnia Żurek</h1>
+</header>
+<nav>
+   <ul>
+     <!-- Nawigacyjne menu -->
+   </ul>
+</nav>
+  <section>
+        <h2 style='display:none'></h2>
+        <form class="form-book" style='display:none'> <!-- Form Add New Book -->
+            <p>
+                <span>Tytuł: </span><input required='required' />
+            </p>
+            <p>
+                <span>Autor: </span><input required='required' />
+            </p>
+            <p>
+                <input type='submit' value="Dodaj książkę" />
+            </p>
+        </form>
+
+        <div class="form-popup" id="myForm"> <!-- Form Login  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form -->
+          <form  class="form-container">
+            <h1></h1>
+        
+            <label for="login"><b>Login</b></label>
+            <input type="text" placeholder="Enter Login" name="login" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="button" class="btn" onclick="confirmLoginForm()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -89,7 +89,7 @@ process.on('SIGINT',function(){
                     fs.writeFileSync(file, begin);
                     fs.appendFileSync(file, bazaJSON);
                     fs.appendFileSync(file, end);
-                    console.log('The "data to append" was appended to file successfuly!');
+                    console.log('The "data to append" was appended to file successfully!');
                     process.exit();
                 } catch (err) {
                     console.log("Uuups.. coś poszło nie tak i nie dodano rekordów do bazy danych, sprawdź plik z bazą..");

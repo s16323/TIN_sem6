@@ -15,9 +15,9 @@ function createBuffer() {
 }
 
 
-var buffer = createBuffer();
-var buffer2 = createBuffer();
-buffer('Data');
-buffer(' aequatione ');
-buffer('quotcunque');
-console.log(buffer());
+// var buffer = createBuffer();
+// var buffer2 = createBuffer();
+// buffer('Data');
+// buffer(' aequatione ');
+// buffer('quotcunque');
+// console.log(buffer());

@@ -36,8 +36,8 @@ function switchClassName(object, className ) {
 
 
 
-switchClassName(obj, 'visible');
-console.log(obj.className);
-
-switchClassName(obj, 'bordered');
-console.log(obj.className);
+// switchClassName(obj, 'visible');
+// console.log(obj.className);
+//
+// switchClassName(obj, 'bordered');
+// console.log(obj.className);
