@@ -1,11 +1,9 @@
 /* jshint browser: true, devel: true, unused: true, globalstrict: true */
 /* global $: false */
-
-
 'use strict';
 
-var wynikLogowania = checkIfLoggedIn();  //  SPrawdza status czy zalogowany jest user Admin
-var tytuł;
+var wynikLogowania = checkIfLoggedIn();  //  Sprawdza status czy user Admin jest zalogowany
+var tytul;
 var autor; 
 var gatunek; 
 
@@ -198,7 +196,7 @@ var postBook=function(){
 
    if ( !wynikLogowania ){  // Gdy NIE jesteśmy zalogowani to odpal funkcje openForm - otwiera formularz i zapisuje tymczasowo dane o naszej ksiażce sprzed logowania
       openForm();
-      tytuł = newTitle;
+      tytul = newTitle;
       autor = newAuthor;
       gatunek = currentGenre;
    }
@@ -234,10 +232,10 @@ var postBook=function(){
 
 function sendPreLoginBooksAfterPositiveLogin(){
    console.log("ODPALONO SEND PRE LOGIN BOOKS");
-   console.log("Wynik logowania: "+ wynikLogowania + ", tytuł: " + tytuł + " ,autor: "+ autor + " ,gatunek: " + gatunek);
+   console.log("Wynik logowania: "+ wynikLogowania + ", tytul: " + tytul + " ,autor: "+ autor + " ,gatunek: " + gatunek);
 
-   if (wynikLogowania && tytuł != undefined && autor != undefined && gatunek != undefined){
-      var preLoginRecord = { 'title' : tytuł, 'author' : autor, 'genre' : gatunek };
+   if (wynikLogowania && tytul != undefined && autor != undefined && gatunek != undefined){
+      var preLoginRecord = { 'title' : tytul, 'author' : autor, 'genre' : gatunek };
       $.post({
          traditional: true,
          url: '/:gen',
@@ -246,7 +244,7 @@ function sendPreLoginBooksAfterPositiveLogin(){
          dataType: 'json',
          success: function(response){ 
             console.log( response );
-            addingNewBookMessage(gatunek, "success", tytuł, autor, gatunek);       
+            addingNewBookMessage(gatunek, "success", tytul, autor, gatunek);
          },
          error : function(response){ 
             console.log( response );
@@ -260,7 +258,7 @@ function sendPreLoginBooksAfterPositiveLogin(){
    }
 
    refreshGenre(gatunek);
-   tytuł = undefined;
+   tytul = undefined;
    autor = undefined;
    gatunek = undefined;
 }

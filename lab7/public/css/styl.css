@@ -88,9 +88,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+  max-width: 500px;
+  /*padding: 10px;*/
+  padding: 20px;
+  background-color: #a9aaac;
 }
 
 /* Full-width input fields */
@@ -100,6 +101,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
+    font-size: 18px;
 }
 
 /* When the inputs get focus, do something */
@@ -112,6 +114,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn {
   /*background-color: #4CAF50;*/
   background-color: gray;
+    font-size: 22px;
   color: white;
   padding: 16px 20px;
   border: none;

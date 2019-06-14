@@ -55,7 +55,7 @@ app.post( '/:gen' , function(req, res){
         var ifTitleExists = baza().filter({title : newTitle}).select("title");
         var ifAuthorExists = baza().filter({author: newAuthor}).select("author");
         var ifGenreExist = baza().filter({title : newTitle}).select("genre"); 
-        console.log("Czy istnieje tytuł: " + ifTitleExists + "  Czy istnieje autor: " + ifAuthorExists + "  Czy istnieje ten gatunek: " + ifGenreExist);
+        console.log("Czy istnieje tytul: " + ifTitleExists + "  Czy istnieje autor: " + ifAuthorExists + "  Czy istnieje ten gatunek: " + ifGenreExist);
     
         if( ifTitleExists == newTitle && ifAuthorExists == newAuthor && ifGenreExist == newGenre){
             console.log("Wybrana ksiazka już istnieje!");
