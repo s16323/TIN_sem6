@@ -1,0 +1,17 @@
+{
+  "name": "ChatWS1",
+  "version": "1.0.0",
+  "description": "Komunikator na Socket.io",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-compress": "0.5.2",
+    "grunt-contrib-rename": "^0.2.0"
+  }
+}

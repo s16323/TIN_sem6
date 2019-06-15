@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                     archive: 'czat.zip'
                 },
                 files: [{
-                    src: ['package.json', 'serwer.js', 'public/**']
+                    src: ['package.json', 'server.js', 'public/**']
                 }]
             }
         },

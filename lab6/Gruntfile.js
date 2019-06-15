@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                     archive: 'zurek.zip'
                 },
                 files: [{
-                    src: ['package.json', 'bower.json', 'Gruntfile.js', 'serwer.js', 'public/**', 'views/**', 'db/*']
+                    src: ['package.json', 'bower.json', 'Gruntfile.js', 'server.js', 'public/**', 'views/**', 'db/*']
                 }]
             }
         },
