@@ -1,0 +1,17 @@
+{
+  "name": "Czat",
+  "version": "0.1.0",
+  "description": "Komunikator na Socket.io",
+  "scripts": {
+    "start": "node serwer.js"
+  },
+  "dependencies": {
+    "express": "^4.11.0",
+    "socket.io": "^1.2.1"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-rename": "^0.2.0",
+    "grunt-contrib-compress": "0.5.2"
+  }
+}

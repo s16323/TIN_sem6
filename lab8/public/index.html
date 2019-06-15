@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prosty klient WebSocket</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styl.css">
+</head>
+
+<body>
+  <div>
+    <form>
+      <span>
+        <img id="status" src="img/bullet_red.png" width="35" />
+        <input id="open" type="button" value="Połącz" />
+        <input id="close" type="button" value="Rozłącz" />
+          <input id="nick" type="text">
+      </span>
+    </form>
+    <p>
+      Komunikat:&nbsp;
+      <input id="text">
+        &nbsp;<input id="send" type="button" value="Wyślij">
+       
+    </p>
+    <textarea id="message" rows="20" cols="70" readonly></textarea>
+      <textarea id="onlineField" rows="20" cols="70" readonly></textarea>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/skrypt.js"></script>
+</body>
+</html>

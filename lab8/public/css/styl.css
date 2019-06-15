@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+}
+
+form {
+  display: table;
+
+}
+
+form span {
+  display: table-row;
+}
+
+form span * {
+  display: table-cell;
+  vertical-align: middle;
+  margin:20px 0.5em;
+}
+
+#open, #close, #send{
+  cursor: pointer;
+}
+
+#message{
+  background-color: lightgrey;
+}
+
+#onlineField{
+  background-color: lightgrey;
+}
+
+#nick{
+  background-color: lightgrey;
+}
+
+#text{
+  background-color: lightgrey;
+}
+
+#status:hover  {
+  cursor: pointer;
+}
